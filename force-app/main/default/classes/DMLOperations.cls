@@ -32,11 +32,10 @@ public with sharing class DMLOperations {
     public static Id insertNewAccount() {
         // Create a new Account instance
         Account acc = new Account();
-
+        
         // Set some fields on the Account
         acc.Name = 'Test Account';
-        acc.Rating = 'Warm';
-        acc.ParentId = '001gK000005YqHlQAK';
+        acc.Rating = 'Warm';     
 
         // Insert the Account into the database
         insert acc;
